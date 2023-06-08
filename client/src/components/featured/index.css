@@ -1,0 +1,34 @@
+.featured {
+  width: 79%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  z-index: 1;
+  margin-bottom: 1.4rem;
+}
+
+.featuredItem {
+  position: relative;
+  color: white;
+  /* border-radius: 10px; */
+  overflow: hidden;    /* ==> in order for the border-radius to work, because featureImg is object-fit: cover */ 
+  height: 300px;
+}
+
+.featuredImg {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.featuredTitles {
+  position: absolute;
+  bottom: 2rem;
+  left: 25px;
+}
+.featuredTitles h1 {
+  font-size: 1.5rem;
+}
+.featuredTitles h2 {
+  font-size: 1.2rem;
+}

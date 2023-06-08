@@ -1,0 +1,145 @@
+.listContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+.listWrapper {
+  width: 85%;
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+.listSearch{
+  flex-basis: 31%;
+  background-color: #6e57e0;
+  padding: 10px;
+  border-radius: 10px;
+  position: sticky;     /* ===> stay always  */
+  top: 10px;
+  padding-bottom: 1.2rem;
+  height: max-content;  /* ===> In order for the sticky to work requires, this  */
+}
+.listResult {
+  flex: 3;
+}
+
+.listTitle {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+.lsItem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+.lsItem label {
+  font-size: 16px;
+}
+.firstInput {
+  height: 40px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: white;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  padding-left: 8px;
+}
+.firstInput:focus {
+  outline: none;
+}
+.lsItem .destination {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgb(23, 23, 32);
+}
+.lsItem .destination2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgb(23, 23, 32);
+}
+.dataFormat {
+  background-color: #e3860d;
+  padding: .4rem .2rem;
+  padding-left: .8rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all .4s;
+}
+
+.date {
+  position: absolute;
+  top: 12rem;
+  right: -34.9rem;
+  box-shadow: 1px 1px 6px 1px rgb(130, 130, 130);
+}
+.dataFormat:hover {
+  background-color: #c17818;
+  transition: all .4s;
+}
+
+.lsOptions{
+  padding: 10px;
+}
+
+.lsOptionItem{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 12px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.lsOptionInput{
+  width: 5.8rem;
+  height: 40px;
+  border: none;
+  padding: 5px;
+  padding-left: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  outline: none;
+}
+
+.listSearch>button{
+  padding: 10px;
+  background-color: #e3860d;
+  color: white;
+  border: none;
+  width: 100%;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all .4s;
+  border-radius: 12px;
+}
+.listSearch>button:hover {
+  background-color: #c17818;
+}
+.listResult {
+  flex: 3;
+}
+.lsOptionText {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  background-color: #6e57e0;
+  font-size: 1rem;
+}
+
+.smaller {
+  font-size: .7rem;
+  margin-top: 4px;
+  margin-left: .3rem;
+}
